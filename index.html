@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — AgroApp PL</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --texto: #1a1a1a;
+    --texto-suave: #555;
+    --acento: #1a6b2f;
+    --borde: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 0 60px;
+  }
+  h1 {
+    font-size: 28px;
+    color: var(--acento);
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+  .fecha {
+    color: var(--texto-suave);
+    font-size: 14px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--borde);
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    color: var(--acento);
+  }
+  p, li {
+    font-size: 16px;
+    color: var(--texto);
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  a {
+    color: var(--acento);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  strong { color: var(--texto); }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--borde);
+    font-size: 13px;
+    color: var(--texto-suave);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidad — AgroApp PL</h1>
+<div class="fecha">Última actualización: 27 de mayo de 2026</div>
+
+<h2>1. Responsable</h2>
+<p>AgroApp PL es una aplicación desarrollada y mantenida por <strong>Fabricio Gigli</strong> (en adelante, "el desarrollador") como herramienta de uso profesional para la gestión de planillas de aplicación de insumos agrícolas.</p>
+<p>Contacto: <a href="mailto:fabriciogigli@gmail.com">fabriciogigli@gmail.com</a></p>
+
+<h2>2. Qué datos recolectamos</h2>
+<p><strong>Ninguno.</strong> AgroApp PL no recolecta, transmite ni almacena información personal en servidores propios del desarrollador. Toda la información que ingresás en la app (planillas, campos, productos, contactos, notas, configuración) se guarda <strong>localmente en tu dispositivo</strong> y nunca abandona el iPhone, salvo cuando vos elegís compartirla (ver punto 4) o cuando vos activás voluntariamente la función opcional de análisis de remitos con IA (ver punto 6).</p>
+
+<h2>3. Datos almacenados localmente</h2>
+<p>La app guarda en la memoria local del iPhone:</p>
+<ul>
+  <li>Planillas de aplicación de insumos agrícolas que vos cargás.</li>
+  <li>Listado de productores, campos, lotes y cultivos.</li>
+  <li>Configuración de la app (nombre, email administrativo, contactos, preferencias visuales).</li>
+  <li>Borradores, PDFs generados y fotos de remitos que vos cargás.</li>
+  <li>Si activás la función opcional de análisis con IA, tu clave de API personal de Anthropic se guarda cifrada en el Llavero (Keychain) de iOS.</li>
+</ul>
+<p>Estos datos se eliminan al desinstalar la aplicación o desde <strong>Ajustes → Limpiar datos</strong>.</p>
+
+<h2>4. Cómo se comparten los datos</h2>
+<p>AgroApp PL genera PDFs y archivos Excel localmente y los comparte únicamente cuando vos así lo decidís, usando las opciones nativas del sistema (correo, WhatsApp, AirDrop, "Compartir…"). El desarrollador no tiene acceso a esa información ni recibe copia de los archivos enviados.</p>
+<p>Cuando enviás una planilla por correo, los destinatarios son los que vos configurás en Ajustes → Mis datos. El envío se realiza a través de la app Mail del sistema (Apple), no a través de servidores propios.</p>
+
+<h2>5. Permisos del sistema</h2>
+<p>La app solicita los siguientes permisos de iOS, solo cuando vos iniciás la función correspondiente:</p>
+<ul>
+  <li><strong>Cámara</strong> — para tomar fotos de remitos físicos y cargarlos a la app.</li>
+  <li><strong>Fototeca</strong> — para seleccionar fotos de remitos guardadas previamente.</li>
+  <li><strong>Calendario</strong> — para crear eventos de recordatorio cuando programás el envío de una planilla. Los eventos se crean únicamente en tu propio calendario.</li>
+</ul>
+<p>La app <strong>no</strong> usa micrófono, ubicación, contactos, notificaciones push, Bluetooth ni rastreo entre apps.</p>
+
+<h2>6. Análisis de remitos con IA (opcional, activado por vos)</h2>
+<p>AgroApp PL incluye una función <strong>opcional</strong> que permite analizar la foto de un remito con un modelo de IA (Claude, de Anthropic) para extraer automáticamente los productos y cantidades. Esta función está <strong>desactivada por defecto</strong> y solo se habilita si vos cargás manualmente tu propia clave de API personal de Anthropic en Ajustes.</p>
+<p>Cuando vos elegís analizar un remito:</p>
+<ul>
+  <li>La imagen del remito se envía cifrada por HTTPS a la API de Anthropic (<a href="https://api.anthropic.com">api.anthropic.com</a>) usando <strong>tu propia clave</strong>.</li>
+  <li>El desarrollador no intermedia ni recibe copia de la imagen ni de la respuesta.</li>
+  <li>El uso, costo y política de retención están regidos por la cuenta de Anthropic que vos contrataste. Ver la política de privacidad de Anthropic en <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</li>
+</ul>
+<p>Si nunca cargás una clave, esta función no se ejecuta y ninguna imagen sale del dispositivo.</p>
+
+<h2>7. Share Extension (recibir remitos desde otras apps)</h2>
+<p>AgroApp PL ofrece una extensión del sistema que aparece en el menú "Compartir" de iOS. Cuando vos compartís una imagen (por ejemplo desde WhatsApp o Fotos) hacia AgroApp PL, esa imagen se copia al almacenamiento local de la app para que la cargues como remito. La imagen no se envía a ningún servidor salvo que vos uses adicionalmente la función opcional descrita en el punto 6.</p>
+
+<h2>8. Otros servicios de terceros</h2>
+<p>AgroApp PL <strong>no</strong> utiliza servicios de análisis (Google Analytics, Firebase, Mixpanel, Sentry), publicidad, redes sociales ni rastreadores. No usa cookies. El único servicio externo es la API de Anthropic descrita en el punto 6, y solo si vos la habilitás explícitamente.</p>
+
+<h2>9. Niños</h2>
+<p>La app no está dirigida a menores de 13 años y no recolecta datos de ningún usuario, independientemente de su edad.</p>
+
+<h2>10. Cambios en esta política</h2>
+<p>Si en futuras versiones AgroApp PL incorpora alguna funcionalidad que implique procesar datos de forma distinta (por ejemplo, sincronización en la nube o cuentas multi-usuario), esta política se actualizará y se notificará dentro de la app.</p>
+
+<h2>11. Tus derechos</h2>
+<p>Toda tu información está en tu dispositivo, bajo tu control. Podés eliminarla en cualquier momento desde <strong>Ajustes → Limpiar datos</strong>, o desinstalando la aplicación. Si activaste la función de IA, podés revocar tu clave de API en cualquier momento desde Ajustes o desde tu cuenta de Anthropic.</p>
+
+<footer>
+  © Fabricio Gigli · AgroApp PL
+</footer>
+
+</main>
+</body>
+</html>
